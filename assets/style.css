@@ -7,10 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-html,
+/* html,
 body {
     scroll-behavior: smooth;
-}
+} */
 
 header {
     display: flex;
@@ -1229,9 +1229,9 @@ footer {
 
 @media (min-width:450px) and (max-width:950px) {
 
-    /* body {
+    body {
         overflow-x: hidden;
-    } */
+    }
 
     .menuOpener {
         display: none;
@@ -1390,7 +1390,7 @@ footer {
     }
 
     .menuOpener {
-        display: block;
+        display: none;
         width: 50vw;
         height: calc(100vh - 100px);
         background-color: rgba(0, 0, 0, 0.9);
