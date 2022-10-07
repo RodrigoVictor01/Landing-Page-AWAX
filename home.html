@@ -6,6 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="./assets/style.css">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if (document.querySelector(".menuOpener").style.display == 'none') {
+                    document.querySelector(".menuOpener").style.display = 'block'
+                }
+                else {
+                    document.querySelector(".menuOpener").style.display = 'none'
+                }
+            })
+        }
+    </script>
+
     <title>Projeto AWAX</title>
 </head>
 
@@ -54,7 +68,9 @@
             </div>
 
             <div class="menu">
-                <img src="./assets/icones/menu.png">
+                <div class="menuMobile">
+                    <img src="./assets/icones/menu.png">
+                </div>
                 <nav>
                     <ul>
                         <a href="#" class="active">
